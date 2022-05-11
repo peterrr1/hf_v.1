@@ -12,10 +12,9 @@ class Lista {
     };
     
     Elem* elso;
-    int elemszam;
     
 public:
-    Lista() : elso(NULL), elemszam(0) {}
+    Lista() : elso(NULL) {}
     
     void beszur(Adatok& adat);
     
@@ -25,17 +24,13 @@ public:
     
     void nevKeres(std::string nev) const;
     
-    void szamKeres(std::string telefonszam) const;
+    bool szamKeres(std::string telefonszam) const;
     
-   // void modosit(std::string telefonszam);
+    void modosit(std::string telefonszam);
     
     void kiir(Elem* tmp) const;
     
     void osszesKiir() const;
-    
-    int meret() const {
-        return elemszam;
-    }
     
     ~Lista();
     

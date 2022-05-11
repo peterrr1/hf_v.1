@@ -7,7 +7,7 @@ void File::fileBeolvas(Lista& lista) {
 
     std::fstream file;
     
-    file.open("telefonkonyv.txt", std::ios::in | std::ios::app);
+    file.open("telefonkonyv.txt", std::ios::in);
     try {
         if (!file)
             throw std::runtime_error("\nHiba a fajl megnyitasa kozben.\n");
